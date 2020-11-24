@@ -12,6 +12,9 @@ let posters = [
     "https://storage.googleapis.com/montco-stats/photo42938puralbk3a221ias/DB664298-C7BB-4D06-9EC8-F7DEFF5F59B0_1_105_c.jpeg",
     "https://storage.googleapis.com/montco-stats/photo42938puralbk3a221ias/CC3C9A74-AE2C-4DE2-B899-B36ED3863D55_1_105_c.jpeg"
     
+    
+    
+    
 ].map { URL(string: $0)! }
 
 struct ContentView: View {
@@ -34,7 +37,7 @@ struct ContentView: View {
         Button(action: {
             self.tag = !self.tag
         }) {
-            Text("Image")
+            Text("Mouse Images")
                 .padding([.leading,.trailing],30)
                 .padding([.top,.bottom],20)
                 .background(Color.green)
